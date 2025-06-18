@@ -18,7 +18,7 @@ This is a modification of the famous "TF2 Ware" made by "Tony Baretta" that imit
 # Next Updates
 - Bringing back the gamemode training hud.
 - Re-enable "ww_trhud" ConVar again.
-- Bringing back old TF2 Ware community modifications.
+- Bringing back old TF2 Ware maps and TF2 Ware versions.
 
 # Install
 
