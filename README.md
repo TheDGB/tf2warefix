@@ -2,6 +2,9 @@
 <img alt="TF2 Ware FIXED" src="assets/tf2warefix.png"> </img>
 
 This is a modification of the famous "TF2 Ware" made by "Tony Baretta" that imitated the Nintendo game "Wario Ware", which eventually no longer had support and glitches occurred over time.
+
+***All credits to the original creator: "Tony Baretta"***
+
 > [!IMPORTANT]\
 > ***Still in beta, we still need to fix things in the mode, but it is already considered compatible and playable!***
 
@@ -18,12 +21,14 @@ This is a modification of the famous "TF2 Ware" made by "Tony Baretta" that imit
 # Next Updates
 - Bringing back the gamemode training hud.
 - Re-enable "ww_trhud" ConVar again.
-- Bringing back old TF2 Ware community modifications.
+- Bringing back old TF2 Ware maps and TF2 Ware versions.
 
 # Install
 
 #### TF2 Ware Assets
 We have archived the necessary files from Wayback Machine to run TF2 Ware for your server, you can install it within our repository and use it to play the mode.
+
+[Download It Here!](https://codeload.github.com/TheDGB/tf2warefix/zip/refs/heads/main)
 
 #### Dependencies.
 You need to install some dependencies to be able to run gamemode as it should be, it also equals to compilation.
