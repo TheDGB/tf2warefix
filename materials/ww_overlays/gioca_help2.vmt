@@ -1,0 +1,5 @@
+"UnlitGeneric"
+{
+	"$basetexture" "ww_overlays/gioca_help2"
+    	"$alphatest" 1
+}

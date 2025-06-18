@@ -1,0 +1,1007 @@
+"Phrases"
+{
+	// prefix ////////////////////////////////////////////////
+	"TF2WARE_PREFIX_COLOR"
+	{
+		"en"				"{green}[{deepskyblue}TF2WARE{green}]"
+		"it"				"{green}[{deepskyblue}TF2WARE{green}]"
+		"ru"				"{green}[{deepskyblue}TF2WARE{green}]"
+	}
+	"TF2WARE_RANK_PREFIX_COLOR"
+	{
+		"en"				"{yellow}[TF2WareRank]"
+		"it"				"{yellow}[TF2WareRank]"
+		"ru"				"{yellow}[TF2WareRank]"
+	}
+	"TF2WARE_PREFIX_PLAIN"
+	{
+		"en"				"[TF2WARE]"
+		"it"				"[TF2WARE]"
+		"ru"				"[TF2WARE]"
+	}
+	
+	///////// game text ///////////////////////////////////////////////
+	"SPECIAL_ROUND"
+	{
+		"en"				"SPECIAL ROUND"
+		"it"				"ROUND SPECIALE"
+		"ru"				"СПЕЦ РАУНД"
+	}
+	"SPECIAL_ROUND_INFO"
+	{
+		"#format"			"{1:s}"
+		"en"				"{1}?\nSpecial Round adds a new condition to the next round!"
+		"it"				"{1}?\nRound Speciale , Aggiunge nuove conditioni al prossimo round!"
+		"ru"				"{1}?\nСпец Раунд добавляет новое условие на след. раунд!"
+	}
+	"SPECIAL_ROUND_OVER"
+	{
+		"en"				"Special Round is over!"
+		"it"				"Round Speciale Finito!"
+		"ru"				"Спец Раунд закончился!"
+	}
+	///////// snowballs ///////////////////////////////////////////////
+	"PRESS"
+	{
+		"en"				"Press"
+		"it"				"Premi"
+		"ru"				"Нажми кнопку"
+	}
+	"BUTTON"
+	{
+		"en"				"Special Attack Button"
+		"it"				"il pulsante Attacco speciale"
+		"ru"				"Спец. атака"
+	}
+	"ATTACK_BUTTON_3"
+	{
+		"en"				"(attack3 or mouse3)"
+		"it"				"(attack3 o mouse3)"
+		"ru"				"(attack3 или СКМ)"
+	}
+	"TO_USE"
+	{
+		"en"				"to use"
+		"it"				"per usare"
+		"ru"				"чтобы использовать"
+	}
+	"SNOWBALLS"
+	{
+		"en"				"snowballs in main area"
+		"it"				"le palle di neve nell' area principale"
+		"ru"				"снежки"
+	}
+	"TARGET"
+	{
+		"en"				"Target:"
+		"it"				"Bersaglio:"
+		"ru"				"цель"
+	}
+	"TARGET"
+	{
+		"en"				"Target:"
+		"it"				"Bersaglio:"
+		"ru"				"цель:"
+	}
+	DB_BALL_SPEED
+	{
+		"en"				"Speed:"
+		"it"				"Velocita':"
+		"ru"				"скорость:"
+	}
+	
+	///////// notifications ///////////////////////////////////////////////
+	"NOTIFY_TF2WARE_VERSION"
+	{
+							//green,version,default,lightgreen//
+		"#format"			"{1:s},{2:s},{3:s},{4:s}"
+		"en"				"{1}TF2WARE v.{2} {3}by {4} TonyBaretta"
+		"it"				"{1}TF2WARE v.{2} {3}Creato da {4} TonyBaretta"
+		"ru"				"{1}TF2WARE v.{2} {3}от {4} TonyBaretta"
+	}
+	"NOTIFY_DRAW_NEWBOSS"
+	{
+		"en"				"{red}DRAW{default}... playing new boss!"
+		"it"				"{red}PAREGGIO{default}... giocate un nuovo livello boss!"
+		"ru"				"{red}ПРИВЛЕКАЙ ВНИМАНИЕ{default}... играя новым боссом!"
+	}
+	"NOTIFY_SPECIAL_OVER"
+	{
+		"en"				"The {lightgreen}Special Round{default} is over!"
+		"it"				"Il {lightgreen}Round Speciale {default} e' finito!"
+		"ru"				"{lightgreen}Специальный Раунд{default} закончился!"
+	}
+	"NOTIFY_BEATEN"
+	{
+		"#format"			"{1:N}"
+		"en"				"{green}You were beaten by {teamcolor}{1}{green}!"
+		"it"				"{green}Sei stato battuto da {teamcolor}{1}{green}!"
+		"ru"				"{green}Ты был избит игроком {teamcolor}{1}{green}!"
+	}
+	"NOTIFY_POINTS"
+	{
+		"#format"			"{1:N}"
+		"en"				"Gave {1} 20 points"
+		"it"				"ricevuto {1} 20 punti"
+		"ru"				"Выдано 20 очков игроку {1}"
+	}
+	"NOTIFY_WINNER"
+	{
+		"en"				"{green}The winner is"
+		"it"				"{green}Il vincitore e'"
+		"ru"				"{green}Победитель"
+	}
+	"NOTIFY_WINNERS"
+	{
+		"en"				"{green}The winners are"
+		"it"				"{green}I vincitori sono"
+		"ru"				"{green}Победители"
+	}
+	"NOTIFY_WIPED_OUT"
+	{
+		"#format"			"{1:N}"
+		"en"				"{teamcolor}{1}{olive} has been {green}wiped out!"
+		"it"				"{teamcolor}{1}{olive} e' stato {green}eliminato!"
+		"ru"				"{teamcolor}{1}{olive} был {green}уничтожен!"
+	}
+	"NOTIFY_WIPED_WAIT"
+	{
+		"en"				"{default}Please wait, the current {olive}Wipeout round{default} needs to finish before you can join."
+		"it"				"{default}Attendere, che il	 {olive}Wipeout round{default} sia finito prima di joinare."
+		"ru"				"{default}Подожди, текущий {olive}уничтожающий раунд{default} должен закончиться перед тем как ты присоединишься."
+	}
+	"NOTIFY_VICTORY_FIRST"
+	{
+		"#format"			"{1:N}"
+		"en"				"{orange}The winner is: {teamcolor}{1}{orange}. This is his {green}first {orange}victory!"
+		"it"				"{orange}Il vincitore e': {teamcolor}{1}{orange}. Questa e' la sua {green}Prima {orange}vittoria!"
+		"ru"				"{orange}Победитель: {teamcolor{1}{orange}. Это его {green}первая {orange}победа!"
+	}
+	"NOTIFY_VICTORY"
+	{
+		"#format"			"{1:N},{2:d}"
+		"en"				"{orange}The winner is: {teamcolor}{1}{orange}. He has won {green}{2} {orange}times!"
+		"it"				"{orange}Il vincitore e' : {teamcolor}{1}{orange}. Ha vinto {green}{2} {orange}volte!"
+		"ru"				"{orange}Победитель: {teamcolor}{1}{orange}. Он побеждал {green}{2} {orange}раз!"
+	}
+	
+	///////// status ///////////////////////////////////////////////
+	"ROUND_RANKING"
+	{
+		"en"				"ROUND RANKING"
+		"it"				"CLASSIFICA DEL ROUND"
+		"ru"				"РЕЙТИНГ ЗА РАУНД"
+	}
+	"POINTS_HUD"
+	{
+		"en"				"Points :"
+		"it"				"Punti :"
+		"ru"				"Очков:"
+	}
+	"LIVES_HUD"
+	{
+		"en"				"Lives :"
+		"it"				"Vite :"
+		"ru"				"Жизней:"
+	}
+	"points"
+	{
+		"en"				"points"
+		"it"				"punti"
+		"ru"				"очков"
+	}
+	"lives"
+	{
+		"en"				"lives"
+		"it"				"vite"
+		"ru"				"жизней"
+	}
+	"and"
+	{
+		"en"				"and"
+		"it"				"e"
+		"ru"				"и"
+	}
+	
+	///////// special ///////////////////////////////////////////////
+	"DUCK_HUD"
+	{
+		"en" "Bonus Duck ON"
+		"it" "Bonus Papera Attivo!"
+		"ru" "БОНУСНЫЕ УТОЧКИ ВКЛ"
+	}
+	"NOTIFY_TOUCH_PLAYER"
+	{
+		"#format"			"{1:N}"
+		"en"				"You touched: {teamcolor}{1}{default}"
+		"it"				"Hai toccato: {teamcolor}{1}{default}"
+		"ru"				"Ты задел: {teamcolor}{1}{default}"
+	}
+	"NOTIFY_TOUCH_WARNING"
+	{
+		"en"				"In this SPECIAL ROUND, you are {red}not allowed to touch anyone{default}!"
+		"it"				"in questo ROUND SPECIALE, tu non e' {red}toccare altri giocatori {default}!"
+		"ru"				"В этом СПЕЦ РАУНДЕ ты {red}не должен задевать кого-либо{default}!"
+	}
+	
+	///////// special names ///////////////////////////////////////////////
+	"SUPER_SPEED"
+	{
+		"en"				"SUPER SPEED"
+		"it"				"SUPER VELOCITA'"
+		"ru"				"СУПЕР СКОРОСТЬ"
+	}
+	"NO_TOUCHING"
+	{
+		"en"				"NO TOUCHING"
+		"it"				"NON TOCCARE"
+		"ru"				"БЕЗ ПРИКОСНОВЕНИЙ"
+	}
+	"x2_BOSS_BATTLE"
+	{
+		"en"				"x2 BOSS BATTLE"
+		"it"				"x2 LIVELLO BOSS"
+		"ru"				"x2 БИТВА С БОССОМ"
+	}
+	"SINGLEPLAYER"
+	{
+		"en"				"SINGLEPLAYER"
+		"it"				"GIOCATORE SINGOLO"
+		"ru"				"ОДИНОЧНЫЙ ИГРОК"
+	}
+	"LEAST_IS_BEST"
+	{
+		"en"				"LEAST IS BEST"
+		"it"				"L' ULTIMO E' IL PRIMO"
+		"ru"				"НАИМЕНЬШИЙ ЛУЧШИЙ"
+	}
+	"BONK"
+	{
+		"en"				"BONK"
+		"it"				"BONK"
+		"ru"				"BONK"
+	}
+	"THIRDPERSON"
+	{
+		"en"				"THIRDPERSON"
+		"it"				"VISUALE IN 3 PERSONA"
+		"ru"				"ВИД ОТ ТРЕТЬЕГО ЛИЦА"
+	}
+	"FOV_EXPERIENCE"
+	{
+		"en"				"FOV EXPERIENCE"
+		"it"				"ESPERIANZA FOV"
+		"ru"				"ОПЫТ НАД ПОЛЕМ ЗРЕНИЯ"
+	}
+	"BIG_WEAPONS"
+	{
+		"en"				"BIG WEAPONS"
+		"it"				"ARMI GRANDI"
+		"ru"				"БОЛЬШИЕ ПУШКИ"
+	}
+	"FART_TIME"
+	{
+		"en"				"IT'S FART TIME"
+		"it"				"E' TEMPO DI SCORREGGE"
+		"ru"				"ВРЕМЯ ПЕРДЁЖКИ"
+	}
+	"BONUS_DUCK"
+	{
+		"en"				"BONUS DUCK"
+		"it"				"BONUS PAPERA"
+		"ru"				"БОНУСНАЯ УТОЧКА"
+	}
+	
+	///////// special descriptions ///////////////////////////////////////////////
+	"SUPER_SPEED_DEC"
+	{
+		"en"				"The Game is Faster Than Usual!"
+		"it"				"Il gioco e' piu' veloce del normale!"
+		"ru"				"Игра Быстрее Чем Обычно!"
+	}
+	"NO_TOUCHING_DEC"
+	{
+		"en"				"Don't Touch Any Enemy Players or You'll Lose!"
+		"it"				"Non toccare altri giocatori oppure perdi!"
+		"ru"				"Не Задевай Всех Врагов или Ты Проиграешь!"
+	}
+	"x2_BOSS_BATTLE_DEC"
+	{
+		"en"				"Two Boss Battles!!"
+		"it"				"doppio livello boss!!"
+		"ru"				"Две Битвы с Боссом!!"
+	}
+	"SINGLEPLAYER_DEC"
+	{
+		"en"				"You're Playing Alone...?"
+		"it"				"ti sembra di giocare da solo ma...?"
+		"ru"				"Ты Играешь Один...?"
+	}
+	"LEAST_IS_BEST_DEC"
+	{
+		"en"				"The Player With The Least Points Win!"
+		"it"				"il giocatore con meno punti vince!"
+		"ru"				"Игрок С Наименьшими Очками Выигрывает!"
+	}
+	"BONK_DEC"
+	{
+		"en"				"Push Players With Your Bat!"
+		"it"				"spingi i giocatori con la mazza!"
+		"ru"				"Толкай Игроков Со Своей Битой!"
+	}
+	"THIRDPERSON_DEC"
+	{
+		"en"				"Everything Is At A New Perspective!"
+		"it"				"Tutto e' sotto un altra prospettiva!"
+		"ru"				"Всё Это Новая Перспектива!"
+	}
+	"FOV_EXPERIENCE_DEC"
+	{
+		"en"				"FOV SET TO 110 For All!"
+		"it"				"FOV settata a 110 per tutti!"
+		"ru"				"FOV 110 Для Всех!"
+	}
+	"BIG_WEAPONS_DEC"
+	{
+		"en"				"sadly not work for all weaps"
+		"it"				"spiacente non funziona con tutte le armi"
+		"ru"				"к сожалению не работает на всех оружиях"
+	}
+	"FART_TIME_DEC"
+	{
+		"en"				"Ops , Sorry man XD"
+		"it"				"Ops , scusa amico XD"
+		"ru"				"Упс, прости чувак XD"
+	}
+	"BONUS_DUCK_DEC"
+	{
+		"en"				"Each Duck worth 1 point!"
+		"it"				"Ogni papera vale 1 punto!"
+		"ru"				"Каждая Утка стоит 1 очко!"
+	}
+	
+	///////// funny names ///////////////////////////////////////////////
+	"FAT_LARD_RUN"
+	{
+		"en"				"FAT LARD RUN"
+		"it"				"PALLE DI GRASSO ROTOLANTI"
+		"ru"				"БЕГ ЖИРНОГО САЛО"
+	}
+	"MOUSTACHIO"
+	{
+		"en"				"MOUSTACHIO"
+		"it"				"MOUSTACHIO"
+		"ru"				"MOUSTACHIO"
+	}
+	"LOVE_STORY"
+	{
+		"en"				"LOVE STORY"
+		"it"				"STORIA D'AMORE"
+		"ru"				"ЛЮБОВНАЯ ИСТОРИЯ"
+	}
+	"SIZE_MATTERS"
+	{
+		"en"				"SIZE MATTERS"
+		"it"				"LE MISURE CONTANO"
+		"ru"				"РАЗМЕР ИМЕЕТ ЗНАЧЕНИЕ"
+	}
+	"ENGINERD"
+	{
+		"en"				"ENGINERD"
+		"it"				"INGEGNERE NERD"
+		"ru"				"ИНЖЕБОТАН"
+	}
+	"IDLE_FOR_HATS"
+	{
+		"en"				"IDLE FOR HATS"
+		"it"				"IDLA PER I CAPPELLI"
+		"ru"				"ИДЛ ДЛЯ ШАПОК"
+	}
+	"TF2_BROS_BRAWL"
+	{
+		"en"				"TF2 BROS: BRAWL"
+		"it"				"TF2 BROS: BRAWL"
+		"ru"				"TF2 BROS: BRAWL"
+	}
+	"HOT_SPY_ON_ICE"
+	{
+		"en"				"HOT SPY ON ICE"
+		"it"				"CALDE SPIE SUL GHIACCIO"
+		"ru"				"ГОРЯЧИЙ ШПИОН НА ЛЬДУ"
+	}
+	///////// MINIGAMES INSTRUCTIONS ///////////////////////////////////////////////
+	"INSTRUCTION_1_1"
+	{
+		"en"				"Kill An Enemy!"
+		"it"				"Uccidi un nemico!"
+		"ru"				"Убей врага!"
+	}
+	"INSTRUCTION_2_1"
+	{
+		"en"				"Avoid The Kamikaze!"
+		"it"				"Evita il kamikaze!"
+		"ru"				"Избегай Камикадзе!"
+	}
+	"INSTRUCTION_2_2"
+	{
+		"en"				"Explode 2 players!"
+		"it"				"Fai Saltare in aira 2 players!"
+		"ru"				"Взорви 2 игроков!"
+	}
+	"INSTRUCTION_3_1"
+	{
+		"en"				"Break a barrel!"
+		"it"				"Rompi il Barile!"
+		"ru"				"Разбей бочку!"
+	}
+	"INSTRUCTION_4_1"
+	{
+		"en"				"Reach the end!"
+		"it"				"Arriva alla fine!"
+		"ru"				"Доберись до конца!"
+	}
+	"INSTRUCTION_5_1"
+	{
+		"en"				"Needle Jump!"
+		"it"				"Siringhe Jump!"
+		"ru"				"Прыжки на шприцемёте!"
+	}
+	"INSTRUCTION_5_2"
+	{
+		"en"				"Rocket Jump!"
+		"it"				"Rocket Jump!"
+		"ru"				"Прыжки на ракетах!"
+	}
+	"INSTRUCTION_5_3"
+	{
+		"en"				"Sticky Jump!"
+		"it"				"Sticky Jump!"
+		"ru"				"Прыжки на липучкомёте!"
+	}
+	"INSTRUCTION_5_4"
+	{
+		"en"				"Flare Jump!"
+		"it"				"Flare Jump!"
+		"ru"				"Прыжки на ракетнице!"
+	}
+	"INSTRUCTION_6_1"
+	{
+		"en"				"Reach the end!"
+		"it"				"Arriva alla fine!"
+		"ru"				"Доберись до конца!"
+	}
+	"INSTRUCTION_7_1"
+	{
+		"en"				"Hit 10 Gifts!"
+		"it"				"Colpisci 10 Regali!"
+		"ru"				"Прострели 10 подарков!"
+	}
+	"INSTRUCTION_8_1"
+	{
+		"en"				"AirBlast!"
+		"it"				"AirBlast!"
+		"ru"				"Отталкивай сжатым воздухом!"
+	}
+	"INSTRUCTION_9_1"
+	{
+		"en"				"Type answer in chat!"
+		"it"				"Scrivi la risposta in chat!"
+		"ru"				"Напиши ответ в чате!"
+	}
+	"INSTRUCTION_10_1"
+	{
+		"en"				"Don't stop moving!"
+		"it"				"Non smettere di muoverti!"
+		"ru"				"Не переставай двигаться!"
+	}
+	"INSTRUCTION_10_2"
+	{
+		"en"				"Don't move!"
+		"it"				"Non muoverti!"
+		"ru"				"Не двигайся!"
+	}
+	"INSTRUCTION_11_1"
+	{
+		"en"				"Get on a platform!"
+		"it"				"Sali sulla piattaforma!"
+		"ru"				"Заберись на платформу!"
+	}
+	"INSTRUCTION_12_1"
+	{
+		"en"				"Hit the target!"
+		"it"				"Colpisci il Bersaglio!"
+		"ru"				"Ударь цель!"
+	}
+	"INSTRUCTION_13_1"
+	{
+		"en"				"Score 7 goal!"
+		"it"				"Colleziona 7 Goal!"
+		"ru"				"Собери 7 очков!"
+	}
+	"INSTRUCTION_14_1"
+	{
+		"en"				"Avoid the cuddly heavy!"
+		"it"				"Evita l'heavy coccoloso!"
+		"ru"				"Избегай привлекательного пулемётчика!"
+	}
+	"INSTRUCTION_14_2"
+	{
+		"en"				"Hug all scouts!"
+		"it"				"Abbraccia tutti gli scouts!"
+		"ru"				"Обнимай всех разведчиков!"
+	}
+	"INSTRUCTION_15_1"
+	{
+		"en"				"Simon Says: Taunt!"
+		"it"				"Simon Dice: Taunt!"
+		"ru"				"Саймон говорит: Насмешка!"
+	}
+	"INSTRUCTION_15_2"
+	{
+		"en"				"Someone Says: Taunt!"
+		"it"				"Someone Dice: Taunt!"
+		"ru"				"Кто-то говорит: Насмешка!"
+	}
+	"INSTRUCTION_15_3"
+	{
+		"en"				"Simon Says: Jump!"
+		"it"				"Simon Dice: Salta!"
+		"ru"				"Саймон говорит: Прыгни!"
+	}
+	"INSTRUCTION_15_4"
+	{
+		"en"				"Someone Says: Jump!"
+		"it"				"Someone Dice: Salta!"
+		"ru"				"Кто-то говорит: Прыгни!"
+	}
+	"INSTRUCTION_15_5"
+	{
+		"en"				"Simon Says: Crouch!"
+		"it"				"Simon Dice: Accucciati!"
+		"ru"				"Саймон говорит: Присядь!"
+	}
+	"INSTRUCTION_15_6"
+	{
+		"en"				"Someone Says: Crouch!"
+		"it"				"Someone Dice: Accucciati!"
+		"ru"				"Кто-то говорит: Присядь!"
+	}
+	"INSTRUCTION_15_7"
+	{
+		"en"				"Simon Says: Medic!"
+		"it"				"Simon Dice: Medic!"
+		"ru"				"Саймон говорит: Медик!"
+	}
+	"INSTRUCTION_15_8"
+	{
+		"en"				"Someone Says: Medic!"
+		"it"				"Someone Dice: Medic!"
+		"ru"				"Кто-то говорит: Медик!"
+	}
+	"INSTRUCTION_15_9"
+	{
+		"en"				"Simon Says: Eat the sandvich!"
+		"it"				"Simon Dice: Mangia il sandvich!"
+		"ru"				"Саймон говорит: Съешь бутерброд!"
+	}
+	"INSTRUCTION_15_10"
+	{
+		"en"				"Someone Says: Eat the sandvich!"
+		"it"				"Someone Dice: Mangia il sandvich!"
+		"ru"				"Кто-то говорит: Съешь бутерброд!"
+	}
+	"INSTRUCTION_15_11"
+	{
+		"en"				"Simon Says: Inspect your weapon! (F key)"
+		"it"				"Simon Dice: ispeziona la tua arma! (tasto F)"
+		"ru"				"Саймон говорит: осмотрите свое оружие! (клавиша F)"
+	}
+	"INSTRUCTION_15_12"
+	{
+		"en"				"Someone Says: Inspect your weapon! (F key)"
+		"it"				"Someone Dice: ispeziona la tua arma! (tasto F)"
+		"ru"				"Кто-то говорит: осмотрите свое оружие! (клавиша F)"
+	}
+	"INSTRUCTION_15_20"
+	{
+		"en"				"... Simon didn't say it ( ͡° ͜ʖ ͡°)!"
+		"it"				"... Simon non ha detto questo ( ͡° ͜ʖ ͡°)!"
+		"ru"				"... Саймон не говорил это ( ͡° ͜ʖ ͡°)!"
+	}
+	"INSTRUCTION_16_1"
+	{
+		"en"				"Push away the enemies!"
+		"it"				"Spingi via i nemici!"
+		"ru"				"Отталкни врагов!"
+	}
+	"INSTRUCTION_17_1"
+	{
+		"en"				"Do the spycrab!"
+		"it"				"Fai lo spycrab!"
+		"ru"				"Сделай spycrab!"
+	}
+	"INSTRUCTION_18_1"
+	{
+		"en"				"Hit the target!"
+		"it"				"Colpisci il bersaglio!"
+		"ru"				"Ударь цель!"
+	}
+	"INSTRUCTION_19_1"
+	{
+		"en"				"Airblast!"
+		"it"				"Airblast!"
+		"ru"				"Отталкивай сжатым воздухом!"
+	}
+	"INSTRUCTION_20_1"
+	{
+		"en"				"Jump the rope!"
+		"it"				"Salta la corda!"
+		"ru"				"Прыгай через канат!"
+	}
+	"INSTRUCTION_21_1"
+	{
+		"en"				"Type the word!"
+		"it"				"Scrivi la parola!"
+		"ru"				"Напиши СЛОВО!"
+	}
+	"INSTRUCTION_21_2"
+	{
+		"en"				"Type the color!"
+		"it"				"Scrivi il colore!"
+		"ru"				"Напиши ЦВЕТ!"
+	}
+	"INSTRUCTION_22_1"
+	{
+		"en"				"Reach the end!"
+		"it"				"Arriva alla fine!"
+		"ru"				"Доберись до конца!"
+	}
+	"INSTRUCTION_23_1"
+	{
+		"en"				"Jump on the heavy head!"
+		"it"				"Salta sulla testa di un heavy!"
+		"ru"				"Запрыгни на голову пулемётчику"
+	}
+	"INSTRUCTION_23_2"
+	{
+		"en"				"Don't get jumped on!"
+		"it"				"Non farti saltare sopra!"
+		"ru"				"Не позволяй запрыгивать на себя!"
+	}
+	"INSTRUCTION_24_1"
+	{
+		"en"				"Reach the end!"
+		"it"				"Arriva alla fine!"
+		"ru"				"Доберитесь до конца!"
+	}
+	"INSTRUCTION_25_1"
+	{
+		"en"				"Vaccum all spy ghosts!"
+		"it"				"Vaccina tutti i fantasmi!"
+		"ru"				"Пылесось всех призраков!"
+	}
+	"INSTRUCTION_25_2"
+	{
+		"en"				"Survive the medics!"
+		"it"				"Sopravvivi ai medici!"
+		"ru"				"Переживи медиков!"
+	}
+	"INSTRUCTION_25_3"
+	{
+		"en"				"Kill the medics!"
+		"it"				"Uccidi i medici!"
+		"ru"				"Убей медиков!"
+	}
+	"INSTRUCTION_26_1"
+	{
+		"en"				"Reach the end!"
+		"it"				"Arriva alla fine!"
+		"ru"				"Доберись до конца!"
+	}
+	"INSTRUCTION_27_1"
+	{
+		"en"				"Fight and stay alive!"
+		"it"				"Combatti e rimani vivo!"
+		"ru"				"Продолжай бой, оставаясь в живых!"
+	}
+	"INSTRUCTION_28_1"
+	{
+		"en"				"Fight and stay alive!"
+		"it"				"Combatti e rimani vivo!"
+		"ru"				"Продолжай бой, оставаясь в живых!"
+	}
+	"INSTRUCTION_29_1"
+	{
+		"en"				"Catch the cubes!"
+		"it"				"Cattura i cubi!"
+		"ru"				"Собери кубы!"
+	}
+	"INSTRUCTION_30_1"
+	{
+		"en"				"Don't get scared!"
+		"it"				"Non farti spaventare dai fantasmi!"
+		"ru"				"Не позволь себя испугать!"
+	}
+	"INSTRUCTION_31_1"
+	{
+		"en"				"Survive!"
+		"it"				"Sopravvivi!"
+		"ru"				"Выживай!"
+	}
+	"INSTRUCTION_32_1"
+	{
+		"en"				"Touch the sky!"
+		"it"				"Tocca il cielo!"
+		"ru"				"Коснись неба!"
+	}
+	"INSTRUCTION_33_1"
+	{
+		"en"				"Enter a door!"
+		"it"				"Entra in una porta!"
+		"ru"				"Войди в дверь!"
+	}
+	"INSTRUCTION_34_1"
+	{
+		"en"				"Avoid the trains!"
+		"it"				"Evita i treni!"
+		"ru"				"Избегай поездов!"
+	}
+	"INSTRUCTION_35_1"
+	{
+		"en"				"Avoid the bombs!"
+		"it"				"Evita le bombe!"
+		"ru"				"Избегай бомб!"
+	}
+	"INSTRUCTION_36_1"
+	{
+		"en"				"Reach the end!"
+		"it"				"Arriva alla fine!"
+		"ru"				"Доберись до конца!"
+	}
+	"INSTRUCTION_37_1"
+	{
+		"en"				"Reach the end!"
+		"it"				"Arriva alla fine!"
+		"ru"				"Доберись до конца!"
+	}
+	"INSTRUCTION_38_1"
+	{
+		"en"				"Reach the end!"
+		"it"				"Arriva alla fine!"
+		"ru"				"Доберись до конца!"
+	}
+	"INSTRUCTION_39_1"
+	{
+		"en"				"Push away the enemies!"
+		"it"				"Spingi via i nemici!"
+		"ru"				"Отталкни врагов!"
+	}
+	"INSTRUCTION_40_1"
+	{
+		"en"				"Taunt kill!"
+		"it"				"Taunt kill!"
+		"ru"				"Убей насмешкой!"
+	}
+	"INSTRUCTION_41_1"
+	{
+		"en"				"Get on the platform!"
+		"it"				"Atterra sulla piattaforma!"
+		"ru"				"Заберись на платформу!"
+	}
+	"INSTRUCTION_42_1"
+	{
+		"en"				"Kill an enemy!"
+		"it"				"Uccidi un nemico!"
+		"ru"				"Убей врага!"
+	}
+	"INSTRUCTION_43_1"
+	{
+		"en"				"LIMBO: The spycrabs have to pass under the laser!"
+		"it"				"LIMBO: fai lo spycrab e passa sotto il laser!"
+		"ru"				"ЛИМБО: Пройди под лазером в стиле спайкраба!"
+	}
+	"INSTRUCTION_44_1"
+	{
+		"en"				"GIOCA JOUER!"
+		"it"				"GIOCA JOUER!"
+		"ru"				"GIOCA JOUER!"
+	}
+	"INSTRUCTION_45_1"
+	{
+		"en"				"Reach the end!"
+		"it"				"Arriva alla fine!"
+		"ru"				"Доберись до конца!"
+	}
+	"INSTRUCTION_46_1"
+	{
+		"en"				"Get on the beach and avoid the shark!"
+		"it"				"Arriva alla spiaggia evitando lo squalo!"
+		"ru"				"Доберись до пляжа, избегая акулы!"
+	}
+	"INSTRUCTION_46_2"
+	{
+		"en"				"YOU ARE THE SHARK : Kill 3 players!"
+		"it"				"SEI LO SQUALO : Uccidi 3 players!"
+		"ru"				"ТЫ АКУЛА: Убей 3 игроков!"
+	}
+	"INSTRUCTION_47_1"
+	{
+		"en"				"Build a SENTRY!"
+		"it"				"Crea una SENTRY!"
+		"ru"				"Построй ТУРЕЛЬ!"
+	}
+	"INSTRUCTION_47_2"
+	{
+		"en"				"Build a DISPENSER!"
+		"it"				"Crea un DISPENSER!"
+		"ru"				"Построй РАЗДАТЧИК!"
+	}
+	"INSTRUCTION_47_3"
+	{
+		"en"				"Build a TELEPORT ENTRANCE!"
+		"it"				"Crea un TELEPORT DI ENTRATA!"
+		"ru"				"Построй ВХОД ТЕЛЕПОРТА!"
+	}
+	"INSTRUCTION_47_4"
+	{
+		"en"				"Build a TELEPORT EXIT!"
+		"it"				"Crea un TELEPORT DI USCITA!"
+		"ru"				"Построй ВЫХОД ТЕЛЕПОРТА!"
+	}
+	"INSTRUCTION_48_1"
+	{
+		"en"				"Hook the cow and hit it!"
+		"it"				"Aggancia la mucca e colpiscila!"
+		"ru"				"Зацепись за корову и ударь её!"
+	}
+	"INSTRUCTION_49_1"
+	{
+		"en"				"Reach the end!"
+		"it"				"Arriva alla fine!"
+		"ru"				"Доберись до конца!"
+	}
+	"INSTRUCTION_50_1"
+	{
+		"en"				"Collect every pages request!"
+		"it"				"Colleziona tutte le pagine richieste!"
+		"ru"				"Собери все записки с требованиями!"
+	}
+	"INSTRUCTION_50_2"
+	{
+		"en"				"YOU ARE SLENDER: Protect your pages and kill the medics!"
+		"it"				"TU SEI SLENDER: Proteggi le tue pagine e uccidi i medici!"
+		"ru"				"ТЫ СЛЕНДЕР: Защищай записки и убивай медиков!"
+	}
+	"INSTRUCTION_51_1"
+	{
+		"en"				"Avoid the red floor and get out the gate!"
+		"it"				"Evita il pavimento rosso ed esci dalla cancello!"
+		"ru"				"Избегай красной поверхности и выйди за ворота!"
+	}
+	"INSTRUCTION_52_1"
+	{
+		"en"				"TREASURE HUNT: Find the OCTOPUS!"
+		"it"				"CACCIA AL TESORO: Trova il polipo con il bottino!"
+		"ru"				"ОХОТА ЗА СОКРОВИЩАМИ: Найди ОКТОПУСА!"
+	}
+	"INSTRUCTION_52_2"
+	{
+		"en"				"TREASURE HUNT: Find the SECRET DIARY!"
+		"it"				"CACCIA AL TESORO: Trova il DIARIO SEGRETO!"
+		"ru"				"ОХОТА ЗА СОКРОВИЩАМИ: Секретный дневник!"
+	}
+	"INSTRUCTION_53_1"
+	{
+		"en"				"Piggyback the heavy before he reaches the end!(stay near the heavy and use rightclick mouse)"
+		"it"				"Salta sulla schiena dell'heavy prima che arriva alla fine!(avviacinati all' heavu e clicca il tasto destro del mouse)"
+		"ru"				"Нагрузи пулемётчика до того, как он дойдёт до конца! (встань возле него и нажмите ПКМ)"
+	}
+	"INSTRUCTION_53_2"
+	{
+		"en"				"Reach the end with less then 3 players on your back!"
+		"it"				"Arriva alla fine con meno di 3 player sulla schiena!"
+		"ru"				"Доберись до конца с меньше, чем 3 игроками за твоей спиной!"
+	}
+	"INSTRUCTION_54_1"
+	{
+		"en"				"Stun Merasmus!"
+		"it"				"Stordisci Merasmus!"
+		"ru"				"Оглуши Маразмуса!"
+	}
+	"INSTRUCTION_55_1"
+	{
+		"en"				"HIT THE BALLS: The team with the most balls will lose , if there's a draw both teams lose!"
+		"it"				"COLPISCI LE PALLE: Il team con piu' palle perde, in caso di pareggio TUTTI perdono!"
+		"ru"				"БЕЙ МЯЧИ: Команда с большинством мячей проиграет, если есть ничья - обе команды проиграют!"
+	}
+	"INSTRUCTION_56_1"
+	{
+		"en"				"Disquise as the model in the middle of the map"
+		"it"				"Travestiti come il modello in centro alla mappa!"
+		"ru"				"Замаскируйся под модель в центре карты!"
+	}
+	"INSTRUCTION_57_1"
+	{
+		"en"				"Hit the passtimeball until it breaks!"
+		"it"				"Colpisci la passtimeball finchè non si rompe!"
+		"ru"				"Бей мяч, пока он не сломается!"
+	}
+	"INSTRUCTION_58_1"
+	{
+		"en"				"GP race, Complete 5 laps to win!"
+		"it"				"Gara GP, Completa 5 giri per vincere!"
+		"ru"				"Гонка GP, сделай 5 кругов, чтобы победить!"
+	}
+	"INSTRUCTION_59_1"
+	{
+		"en"				"Dodgeball : Win the round!"
+		"it"				"Dodgeball : Vinci il round!"
+		"ru"				"вышибалы: выиграть раунд!"
+	}
+	"INSTRUCTION_60_1"
+	{
+		"en"				"StreetFighter : Kill Someone with your fireball"
+		"it"				"StreetFighter : Uccidi qualcuno con la tua palla di fuoco!"
+		"ru"				"StreetFighter: Убейте кого-нибудь своим огненным шаром!"
+	}
+	"INSTRUCTION_61_1"
+	{
+		"en"				"Pickup: SANDVICH and eat it!"
+		"it"				"Prendi il: SANDVICH e mangialo!"
+		"ru"				"Пикап: SANDVICH и съесть его!!"
+	}
+	"INSTRUCTION_61_2"
+	{
+		"en"				"Pickup: FESTIVE SANDVICH and eat it!"
+		"it"				"Prendi il: SANDVICH FESTIVO e mangialo!"
+		"ru"				"Пикап: SANDVICH FESTIVE и съесть его!!"
+	}
+	"INSTRUCTION_61_3"
+	{
+		"en"				"Pickup: ROBO-SANDVICH and eat it!"
+		"it"				"Prendi il: ROBO-SANDVICH e mangialo!"
+		"ru"				"Пикап: ROBO-SANDVICH и съесть его!!"
+	}
+	"INSTRUCTION_61_4"
+	{
+		"en"				"Pickup: BANANA!"
+		"it"				"Prendi la: BANANA!"
+		"ru"				"Пикап: БАНАН и съесть его!!"
+	}
+	"INSTRUCTION_61_5"
+	{
+		"en"				"Pickup: STEAK and eat it!"
+		"it"				"Prendi la: BISTECCA e mangiala"
+		"ru"				"Пикап: STEAK и съесть его!!"
+	}
+	"INSTRUCTION_61_6"
+	{
+		"en"				"Pickup: CHOCOLATE BAR and eat it!"
+		"it"				"Prendi la: BARRETTA DI CIOCCOLATO e mangiala!"
+		"ru"				"Пикап: ШОКОЛАДНЫЙ БАР и съесть его!!"
+	}
+	"INSTRUCTION_61_7"
+	{
+		"en"				"Pickup: FISHCAKE and eat it!"
+		"it"				"Prendi la: TORTA DI PESCE e mangiala!"
+		"ru"				"Пикап: FISHCAKE и съесть его!"
+	}
+	"INSTRUCTION_62_1"
+	{
+		"en"				"Pirate Attack : Jump over the RED SHIP!"
+		"it"				"Attacco Pirata: Salta sulla NAVE ROSSA!"
+		"ru"				"Пиратская атака: прыгайте через КРАСНЫЙ КОРАБЛЬ!"
+	}
+	"INSTRUCTION_62_2"
+	{
+		"en"				"Pirate Attack : Jump over the BLUE SHIP!"
+		"it"				"Attacco Pirata: Salta sulla NAVE BLU!"
+		"ru"				"Пиратская атака: прыгайте через ГОЛУБОЙ КОРАБЛЬ!"
+	}
+	"INSTRUCTION_63_1"
+	{
+		"en"				"Avoid the hungry Chester!"
+		"it"				"Evita l'affamato Chester!"
+		"ru"				"Избегайте голодного Честера!"
+	}
+}
