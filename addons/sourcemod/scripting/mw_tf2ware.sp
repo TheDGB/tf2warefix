@@ -621,8 +621,8 @@ public void OnMapStart()
 				m_bIsInTrainingOffset = FindSendPropInfo("CTFGameRulesProxy", "m_bIsInTraining");
 				m_bIsTrainingHUDVisibleOffset = FindSendPropInfo("CTFGameRulesProxy", "m_bIsTrainingHUDVisible");
 				
-        		SetEntData(m_bIsInTrainingOffset, 1, 1, true);
-        		SetEntData(m_bIsTrainingHUDVisibleOffset, 1, 1, true);
+        		// SetEntData(m_bIsInTrainingOffset, 1, 1, true);
+        		// SetEntData(m_bIsTrainingHUDVisibleOffset, 1, 1, true);
 		}
 			
 		// Remove Notification Flags
