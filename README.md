@@ -39,9 +39,7 @@ You need to install some dependencies to be able to run gamemode as it should be
 - [TF2 Attributes](https://github.com/FlaminSarge/tf2attributes/releases)
 
 #### Database Setup
-In order to activate Rank on your TF2 Ware server, you need to create a database in MySQL.
-
-The gamemode needs MySQL to work, but you can choose not to have the TF2 Ware Rank by just disabling the command "ww_sql" > "0" and continue without saving your scores.
+The gamemode needs MySQL to work, In order to activate Rank on your TF2 Ware server, you need to create a database in MySQL.
 
 ```
 "tf2ware_rank"
