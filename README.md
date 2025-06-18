@@ -25,6 +25,8 @@ This is a modification of the famous "TF2 Ware" made by "Tony Baretta" that imit
 #### TF2 Ware Assets
 We have archived the necessary files from Wayback Machine to run TF2 Ware for your server, you can install it within our repository and use it to play the mode.
 
+[Download It Here!](https://codeload.github.com/TheDGB/tf2warefix/zip/refs/heads/main)
+
 #### Dependencies.
 You need to install some dependencies to be able to run gamemode as it should be, it also equals to compilation.
 - [Sourcemod 1.12+](https://www.sourcemod.net/downloads.php)
