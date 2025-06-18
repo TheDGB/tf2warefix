@@ -8,7 +8,6 @@
 #include <tf2>
 #include <tf2_stocks>
 #include <sdkhooks>
-#include <tf2items>
 #include <loghelper>
 #include <tf2_hud>
 #include <gimme>
@@ -350,7 +349,7 @@ public void OnPluginStart()
 	ww_force_special = CreateConVar("ww_force_special", "0", "Forces a specific Special Round on Special Round", FCVAR_PLUGIN);
 	
 	// In development !!!
-	//TrHud = CreateConVar("ww_trhud", "0", "Show Mission message via training hud?", FCVAR_NONE, true, 0.0, true, 1.0);
+	TrHud = CreateConVar("ww_trhud", "0", "Show Mission message via training hud?", FCVAR_NONE, true, 0.0, true, 1.0);
 	
 	RegConsoleCmd("say", Command_Say);
 	//RegConsoleCmd("jointeam", Command_JoinTeam);
@@ -1295,14 +1294,14 @@ public void EventInventoryApplication(Event event, const char[] name, bool dontB
 		}
 	}
 }
-public int TF2Items_OnGiveNamedItem_Post(int client, char[] classname, int index, int level, int quality, int entity)
-{
-	switch (index)
-	{
-		case 735, 736, 810, 831, 933, 1102, 1080:
-			CreateTimer(0.1, Timer_RemoveEntity, EntIndexToEntRef(entity));
-	}
-}
+// public void TF2Items_OnGiveNamedItem_Post(int client, char[] classname, int index, int level, int quality, int entity)
+// {
+//     switch (index)
+//     {
+//          case 735, 736, 810, 831, 933, 1102, 1080:
+//          CreateTimer(0.1, Timer_RemoveEntity, EntIndexToEntRef(entity));
+//     }
+// }
 
 public Action Timer_RemoveEntity(Handle timer, any ref) {
     int entity = EntRefToEntIndex(ref);

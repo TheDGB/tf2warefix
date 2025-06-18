@@ -378,9 +378,7 @@ public Action GiveClientWeapon(int client, int slot, bool input)
 {
 	if (IsValidClient(client) && IsPlayerAlive(client))
 	{	
-		//TF2_RemoveWeaponSlot(client, slot);
 		RemoveAllWeapons();		   
-		//SetClientSlot(client, slot);
 		if (input == true)
 		{
 			TFClassType class = TF2_GetPlayerClass(client);
@@ -394,7 +392,6 @@ public Action GiveClientWeapon(int client, int slot, bool input)
 			if (class == TFClass_Sniper) giveitem(client, 939);
 			if (class == TFClass_Spy) giveitem(client, 939);	
 		}	
-		// Create a model everyone else can oodle at
 		RemoveFakeWeapon(client);
 		SetWeaponState(client, input);
 	}
@@ -444,7 +441,7 @@ public Action RemoveAllWeapons()
 	return Plugin_Continue;
 }
 
-void DisableClientWeapons(int client)
+public void DisableClientWeapons(int client)
 {
 	if (IsValidClient(client) && (IsPlayerAlive(client) && IsValidTeam(client)))
 	{
@@ -452,7 +449,6 @@ void DisableClientWeapons(int client)
 		
 		if (SpecialRound == 6 && (!(StrEqual(minigame, "SimonSays") && simon_action == 0)))
 		{
-			//GiveClientWeapon(client, "tf_weapon_bat", 2, true);
 			giveitem(client, 660);
 			SetClientSlot(client, 2);
 		}
@@ -929,85 +925,43 @@ stock void StartLaser(float start[3], float end[3])
 		CreateTimer(10.5, KillLimboBeam, ent);
 	}
 }
-stock void ForceGrapplingHook(int client)
+void ForceGrapplingHook(int client)
 {
 	if (IsValidClient(client))
 	{
-		Handle hWeapon = TF2Items_CreateItem(OVERRIDE_ALL|FORCE_GENERATION);
-		TF2Items_SetClassname(hWeapon, "tf_weapon_grapplinghook");
-		TF2Items_SetItemIndex(hWeapon, 1152);
-		TF2Items_SetLevel(hWeapon, 100);
-		TF2Items_SetQuality(hWeapon, 6);
-
-		int GPHook = TF2Items_GiveNamedItem(client, hWeapon);
-		CloseHandle(hWeapon);
-		//new weapon = GetEntPropEnt(client, Prop_Send, "m_hActiveWeapon");
-		//if (GetEntProp(weapon, Prop_Send, "m_iItemDefinitionIndex") != 1152)
-		//{
-		//	EquipPlayerWeapon(client, GPHook);
-		//}
-
-		EquipPlayerWeapon(client, GPHook);
+		giveitem(client, 1152);
 	}
 }
-stock void ForceFlamePyro (int client)
+
+void ForceFlamePyro(int client)
 {
 	if (IsValidClient(client))
 	{
-		Handle hWeapon = TF2Items_CreateItem(OVERRIDE_ALL|FORCE_GENERATION);
-		TF2Items_SetClassname(hWeapon, "tf_weapon_flamethrower");
-		TF2Items_SetItemIndex(hWeapon, 659);
-		TF2Items_SetLevel(hWeapon, 100);
-		TF2Items_SetQuality(hWeapon, 6);
-
-		int Sshot = TF2Items_GiveNamedItem(client, hWeapon);
-		CloseHandle(hWeapon);
-		EquipPlayerWeapon(client, Sshot);
+		giveitem(client, 659);
 	}
 }
-stock void ForceScorchShotPyro (int client)
+
+void ForceScorchShotPyro(int client)
 {
 	if (IsValidClient(client))
 	{
-		Handle hWeapon = TF2Items_CreateItem(OVERRIDE_ALL|FORCE_GENERATION);
-		TF2Items_SetClassname(hWeapon, "tf_weapon_flaregun");
-		TF2Items_SetItemIndex(hWeapon, 740);
-		TF2Items_SetLevel(hWeapon, 100);
-		TF2Items_SetQuality(hWeapon, 6);
-
-		int Sshot = TF2Items_GiveNamedItem(client, hWeapon);
-		CloseHandle(hWeapon);
-		EquipPlayerWeapon(client, Sshot);
+		giveitem(client, 740);
 	}
 }
-stock void ForceHotHand (int client)
+
+void ForceHotHand(int client)
 {
 	if (IsValidClient(client))
 	{
-		Handle hWeapon = TF2Items_CreateItem(OVERRIDE_ALL|FORCE_GENERATION);
-		TF2Items_SetClassname(hWeapon, "tf_weapon_slap");
-		TF2Items_SetItemIndex(hWeapon, 1181);
-		TF2Items_SetLevel(hWeapon, 100);
-		TF2Items_SetQuality(hWeapon, 1);
-
-		int hhhot = TF2Items_GiveNamedItem(client, hWeapon);
-		CloseHandle(hWeapon);
-		EquipPlayerWeapon(client, hhhot);
+		giveitem(client, 1181);
 	}
 }
-stock void ForceSpyPDA (int client)
+
+void ForceSpyPDA(int client)
 {
 	if (IsValidClient(client))
 	{
-		Handle hWeapon = TF2Items_CreateItem(OVERRIDE_ALL|FORCE_GENERATION);
-		TF2Items_SetClassname(hWeapon, "tf_weapon_pda_spy");
-		TF2Items_SetItemIndex(hWeapon, 27);
-		TF2Items_SetLevel(hWeapon, 100);
-		TF2Items_SetQuality(hWeapon, 1);
-
-		int Spda = TF2Items_GiveNamedItem(client, hWeapon);
-		CloseHandle(hWeapon);
-		EquipPlayerWeapon(client, Spda);
+		giveitem(client, 27);
 	}
 }
 
