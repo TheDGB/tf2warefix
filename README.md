@@ -2,6 +2,9 @@
 <img alt="TF2 Ware FIXED" src="assets/tf2warefix.png"> </img>
 
 This is a modification of the famous "TF2 Ware" made by "Tony Baretta" that imitated the Nintendo game "Wario Ware", which eventually no longer had support and glitches occurred over time.
+
+***All credits to the original creator: "Tony Baretta"***
+
 > [!IMPORTANT]\
 > ***Still in beta, we still need to fix things in the mode, but it is already considered compatible and playable!***
 
