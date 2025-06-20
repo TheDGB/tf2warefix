@@ -33,6 +33,7 @@ We have archived the necessary files from Wayback Machine to run TF2 Ware for yo
 #### Dependencies.
 You need to install some dependencies to be able to run gamemode as it should be, it also equals to compilation.
 - [Sourcemod 1.12+](https://www.sourcemod.net/downloads.php)
+- [TF2 Items](https://builds.limetech.io/?project=tf2items)
 - [Gimme (Replaced TF2 Items Give Weapon)](https://forums.alliedmods.net/showthread.php?p=2766587)
 - [Steam Works](https://users.alliedmods.net/~kyles/builds/SteamWorks/)
 - [TF Econ Data](https://github.com/nosoop/SM-TFEconData/releases)

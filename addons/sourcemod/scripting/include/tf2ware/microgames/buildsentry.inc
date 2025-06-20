@@ -1,10 +1,14 @@
 int build_action;
 bool IsPlayerHavePDA = false;
+#if !defined FORCE_GENERATION
+#define FORCE_GENERATION (1 << 8)
+#endif
+
 public void BuildSentry_OnMinigame() {
 	AddToForward(g_justEntered, INVALID_HANDLE, BuildSentry_justEntered);
 	AddToForward(g_OnEndMinigame, INVALID_HANDLE, BuildSentry_End);
 	build_action = GetRandomInt(0,3);
-	HookEvent( "player_builtobject", OnBuildObject);
+	HookEvent("player_builtobject", OnBuildObject, EventHookMode_Post);
 	IsPlayerHavePDA = false;
 	
 	g_attack = true;
@@ -125,21 +129,45 @@ public void  BuildSentry_justEntered(int client) {
 	}
 
 }
+
+void GivePDA(int client, int itemIndex, char[] classname)
+{
+    Handle hItem = TF2Items_CreateItem(OVERRIDE_ALL);
+    TF2Items_SetFlags(hItem, OVERRIDE_ALL | FORCE_GENERATION);
+    TF2Items_SetClassname(hItem, classname);
+    TF2Items_SetItemIndex(hItem, itemIndex);
+    TF2Items_SetQuality(hItem, 0);
+    TF2Items_SetLevel(hItem, 1);
+    TF2Items_SetNumAttributes(hItem, 0);
+    
+    int entity = TF2Items_GiveNamedItem(client, hItem);
+    CloseHandle(hItem);
+    
+    if(IsValidEntity(entity)) {
+        EquipPlayerWeapon(client, entity);
+    }
+}
+
 public void BlowMind(int client)
 {
-	if (IsValidClient(client)){
-		//giveitem(client, 26);
-		giveitem(client, 28);
-		//giveitem(client, 25);
+    if(IsValidClient(client)) {
+        TF2_RemoveWeaponSlot(client, TFWeaponSlot_PDA);
+        TF2_RemoveWeaponSlot(client, TFWeaponSlot_Building);
+        
+        GivePDA(client, 28, "tf_weapon_builder");
+        
+        SetEntProp(client, Prop_Data, "m_iAmmo", 150, 4, 3);
+		
+		IsPlayerHavePDA = true;
 		CreateTimer(0.2, BlowMind2, client);
-		IsPlayerHavePDA = false;
-	}
+    }
 }
+
 public Action BlowMind2(Handle timer, any client)
 {
-    if (IsValidClient(client)){
-        //giveitem(client, 28);
-        giveitem(client, 25);
+    if (IsValidClient(client)) {
+        GivePDA(client, 25, "tf_weapon_pda_engineer_build");
+		GivePDA(client, 7, "tf_weapon_wrench");
     }
     return Plugin_Continue;
 }

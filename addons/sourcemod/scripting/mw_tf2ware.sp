@@ -10,6 +10,7 @@
 #include <sdkhooks>
 #include <loghelper>
 #include <tf2_hud>
+#include <tf2items>
 #include <gimme>
 #pragma newdecls required
 
