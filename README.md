@@ -14,7 +14,7 @@ This is a modification of the famous "TF2 Ware" made by "Tony Baretta" that imit
 - Fixed where the blue and red boats in the "Pirate Attack" micro game had buggy collisions.
 - Fixed in the "Spycrab Limbo" micro game makes players freeze in mid-air, giving the player a soft lock bug.
 - The plugin no longer supports "Send Proxy" and has been removed from gamemode.
-- Swapping "TF2 Items" to "Gimme" for Optimization and Time Saving.
+- Swapping "TF2 Items Give Weapons" to "Gimme" for Optimization and Time Saving.
 - The gamemode is compilable again.
 - Updating script syntax to latest.
 
@@ -33,7 +33,7 @@ We have archived the necessary files from Wayback Machine to run TF2 Ware for yo
 #### Dependencies.
 You need to install some dependencies to be able to run gamemode as it should be, it also equals to compilation.
 - [Sourcemod 1.12+](https://www.sourcemod.net/downloads.php)
-- [TF2 Items Give Weapons](https://builds.limetech.io/?project=tf2items)
+- [TF2 Items](https://builds.limetech.io/?project=tf2items)
 - [Gimme (Replaced TF2 Items Give Weapon)](https://forums.alliedmods.net/showthread.php?p=2766587)
 - [Steam Works](https://users.alliedmods.net/~kyles/builds/SteamWorks/)
 - [TF Econ Data](https://github.com/nosoop/SM-TFEconData/releases)
