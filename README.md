@@ -94,4 +94,4 @@ mp_teams_unbalance_limit 0
 # **Enjoy the plugin!**
 ***All credits to the original creator: "Tony Baretta"***
 
-[![](https://dcbadge.vercel.app/api/server/xftqrvZSAw)](https://discord.gg/xftqrvZSAw)
+[![](https://dcbadge.limes.pink/api/server/xftqrvZSAw)](https://discord.gg/xftqrvZSAw)
