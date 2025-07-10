@@ -11,6 +11,7 @@
 #include <loghelper>
 #include <tf2_hud>
 #include <tf2items>
+#include <sendproxy>
 #include <gimme>
 #pragma newdecls required
 
@@ -192,8 +193,8 @@ bool g_Participating[MAXPLAYERS+1] = {false, ...}
 int g_Gamemode = 0;
 bool ShowMessage = false;
 int GameRules = -1;
-int m_bIsInTrainingOffset = -1;
-int m_bIsTrainingHUDVisibleOffset = -1;
+int m_bIsInTraining;
+int m_bIsTrainingHUDVisible;
 
 
 // Strings
@@ -349,8 +350,7 @@ public void OnPluginStart()
 	g_Cvar_Snowball = CreateConVar("ww_snowballs", "1", "Enable snowball?", FCVAR_NONE, true, 0.0, true, 1.0);
 	ww_force_special = CreateConVar("ww_force_special", "0", "Forces a specific Special Round on Special Round", FCVAR_PLUGIN);
 	
-	// In development !!!
-	TrHud = CreateConVar("ww_trhud", "0", "Show Mission message via training hud?", FCVAR_NONE, true, 0.0, true, 1.0);
+	TrHud = CreateConVar("ww_trhud", "1", "Show Mission message via training hud! Fixed", FCVAR_NONE, true, 0.0, true, 1.0);
 	
 	RegConsoleCmd("say", Command_Say);
 	//RegConsoleCmd("jointeam", Command_JoinTeam);
@@ -369,8 +369,8 @@ public void OnPluginStart()
 	LoadTranslations("mw_tf2ware.phrases.txt");
 	Format(infoText, sizeof(infoText), "{orange}[TF2Ware]{default}Commands: {green}/top10 {default}show top10 winners, {green}/wlr {default}Show Win lose ratio {green}/mg_list{default} list minigames won {green}/rank {default} Player details");
 
-    m_bIsInTrainingOffset = FindSendPropInfo("CTFPlayer", "m_bIsInTraining");
-    m_bIsTrainingHUDVisibleOffset = FindSendPropInfo("CTFPlayer", "m_bIsTrainingHUDVisible");
+	m_bIsInTraining = FindSendPropInfo("CTFGameRulesProxy", "m_bIsInTraining");
+	m_bIsTrainingHUDVisible = FindSendPropInfo("CTFGameRulesProxy", "m_bIsTrainingHUDVisible");
 	if (ww_advert.FloatValue > 0.0 && ww_sql.IntValue && ww_enable.BoolValue) CreateTimer(ww_advert.FloatValue , Notification);
 }
 public APLRes AskPluginLoad2(Handle myself, bool late, char[] error, int err_max)
@@ -619,11 +619,9 @@ public void OnMapStart()
 			{
 				GameRules = CreateEntityByName("tf_gamerules");
 			}
-				m_bIsInTrainingOffset = FindSendPropInfo("CTFGameRulesProxy", "m_bIsInTraining");
-				m_bIsTrainingHUDVisibleOffset = FindSendPropInfo("CTFGameRulesProxy", "m_bIsTrainingHUDVisible");
-				
-        		// SetEntData(m_bIsInTrainingOffset, 1, 1, true);
-        		// SetEntData(m_bIsTrainingHUDVisibleOffset, 1, 1, true);
+			SendProxy_Hook(GameRules, "m_bIsInTraining", Prop_Int, Training_Callback);
+			SendProxy_Hook(GameRules, "m_bIsTrainingHUDVisible", Prop_Int, Training_Callback);
+			SendProxy_Hook(GameRules, "m_bIsWaitingForTrainingContinue", Prop_Int, Training_Callback);
 		}
 			
 		// Remove Notification Flags
@@ -3794,8 +3792,8 @@ stock void TrainingMessage(int client, char[] objective, char[] message, float d
    
 	ShowMessage = true;
 
-	ChangeEdictState(GameRules, m_bIsInTrainingOffset);
-	ChangeEdictState(GameRules, m_bIsTrainingHUDVisibleOffset);
+	ChangeEdictState(GameRules, m_bIsInTraining);
+	ChangeEdictState(GameRules, m_bIsTrainingHUDVisible);
    
 	Handle MessageObj = StartMessageOne("TrainingObjective", client);
 	if (MessageObj != INVALID_HANDLE)
@@ -3825,8 +3823,8 @@ public Action ClearHud(Handle timer)
 {
 	ShowMessage = false;
    
-   ChangeEdictState(GameRules, m_bIsInTrainingOffset);
-   ChangeEdictState(GameRules, m_bIsTrainingHUDVisibleOffset);
+	ChangeEdictState(GameRules, m_bIsInTraining);
+	ChangeEdictState(GameRules, m_bIsTrainingHUDVisible);
 	
 	return Plugin_Stop;
 }

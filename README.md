@@ -15,13 +15,9 @@ This is a modification of the famous "TF2 Ware" made by "Tony Baretta" that imit
 - Fixed in the "Spycrab Limbo" micro game makes players freeze in mid-air, giving the player a soft lock bug.
 - The plugin no longer supports "Send Proxy" and has been removed from gamemode.
 - Swapping "TF2 Items Give Weapons" to "Gimme" for Optimization and Time Saving.
+- Fixed issue where Training Hud not working, now fixed.
 - The gamemode is compilable again.
 - Updating script syntax to latest.
-
-# Next Updates
-- Bringing back the gamemode training hud.
-- Re-enable "ww_trhud" ConVar again.
-- Bringing back old TF2 Ware maps and TF2 Ware versions.
 
 # Install
 
@@ -34,6 +30,7 @@ We have archived the necessary files from Wayback Machine to run TF2 Ware for yo
 You need to install some dependencies to be able to run gamemode as it should be, it also equals to compilation.
 - [Sourcemod 1.12+](https://www.sourcemod.net/downloads.php)
 - [TF2 Items](https://builds.limetech.io/?project=tf2items)
+- [Send Proxy Fixed](https://github.com/TheDGB/tf2warefix/tree/main/addons/sourcemod)
 - [Gimme (Replaced TF2 Items Give Weapon)](https://forums.alliedmods.net/showthread.php?p=2766587)
 - [Steam Works](https://users.alliedmods.net/~kyles/builds/SteamWorks/)
 - [TF Econ Data](https://github.com/nosoop/SM-TFEconData/releases)
@@ -61,7 +58,7 @@ You can leave the TF2 Ware map settings as you wish, but we will share the map s
 
 Create a CFG named "tf2ware2_a4.cfg" in your server or game's CFG folder with this commands.
 ```
-sm plugins mw_tf2ware.smx
+sm plugins load mw_tf2ware.smx
 
 mp_disable_respawn_times 0
 mp_friendlyfire 0
@@ -76,6 +73,7 @@ mp_teams_unbalance_limit 0
 | **ConVars**               | **Default Value** | **Description**                                                                 |
 |---------------------------|-------------------|---------------------------------------------------------------------------------|
 | `ww_enable`               | `1`               | Enables/Disables TF2 Ware.                                                      |
+| `ww_trhud`                | `1`               | Show Mission message via training hud! Fixed                                    |
 | `ww_force`                | `0`               | Force a certain minigame (0 to not force).                                      |
 | `ww_speed`                | `1.0`             | Speed level.                                                                    |
 | `ww_music_fix`            | `0`               | Apply music fix? Should only be on for localhosts during testing                |
