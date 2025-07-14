@@ -67,6 +67,8 @@ mp_match_end_at_timelimit 1
 mp_autoteambalance 0
 mp_scrambleteams_auto 0
 mp_teams_unbalance_limit 0
+
+sm_gimme_chat_notice_enabled 0
 ```
 # Convars
 
