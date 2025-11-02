@@ -95,3 +95,5 @@ sm_gimme_chat_notice_enabled 0
 ***All credits to the original creator: "Tony Baretta"***
 
 [![](https://dcbadge.limes.pink/api/server/xftqrvZSAw)](https://discord.gg/xftqrvZSAw)
+
+[![](http://fastdl.optr.me:8090/embed/steamgroup.png)](https://steamcommunity.com/groups/optr-me)
