@@ -11,6 +11,7 @@
 #include <loghelper>
 #include <tf2_hud>
 #include <tf2items>
+#include <tf2items_giveweapon>
 #include <sendproxy>
 #include <gimme>
 #pragma newdecls required
@@ -623,7 +624,7 @@ public void OnMapStart()
 			SendProxy_Hook(GameRules, "m_bIsTrainingHUDVisible", Prop_Int, Training_Callback);
 			SendProxy_Hook(GameRules, "m_bIsWaitingForTrainingContinue", Prop_Int, Training_Callback);
 		}
-			
+		
 		// Remove Notification Flags
 		RemoveNotifyFlag("sv_tags");
 		RemoveNotifyFlag("mp_respawnwavetime");
@@ -3828,7 +3829,7 @@ public Action ClearHud(Handle timer)
 	
 	return Plugin_Stop;
 }
-public Action Training_Callback(int entity, const char[] propName, int &iValue, int element)
+public Action Training_Callback(const int iEntity, const char[] cPropName, int &iValue, const int iElement, const int iClient)
 {
 	if(ShowMessage)
 	{
